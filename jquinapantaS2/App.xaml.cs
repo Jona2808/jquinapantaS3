@@ -10,7 +10,7 @@ namespace jquinapantaS2
         {
             InitializeComponent();
 
-            MainPage = new Calificaciones();
+            MainPage = new NavigationPage(new Inicio());
         }
 
         protected override void OnStart()

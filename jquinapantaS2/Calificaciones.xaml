@@ -6,8 +6,9 @@
         <ScrollView>
             <!--habilitamos movilizar la pantalla hacia abajo-->
             <StackLayout>
-                <!--Encabezado-->
-                <Label Text="Usuario" FontSize="15" HorizontalTextAlignment="Start"/>
+                
+                <Label Text="Usuario:" FontSize="15" HorizontalTextAlignment="Start" Margin="10,0,0,0"/>
+                <Label x:Name="lblUsuario" FontSize="15" HorizontalTextAlignment="Start" Margin="10,0,0,0"/>
                 <BoxView HorizontalOptions="FillAndExpand" HeightRequest="5" Color="#1690F4"/>
                 <Label Text="CALCULADORA DE NOTAS UISRAEL" HorizontalOptions="CenterAndExpand" FontSize="Title" HorizontalTextAlignment="Center" TextColor="Black" />
                 <BoxView HorizontalOptions="FillAndExpand" HeightRequest="5" Color="#1690F4"/>

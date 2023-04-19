@@ -12,9 +12,10 @@ namespace jquinapantaS2
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Calificaciones : ContentPage
     {
-        public Calificaciones()
+        public Calificaciones(string usuario1)
         {
             InitializeComponent();
+            lblUsuario.Text = usuario1;
         }
 
         private void btnCalcular_Clicked(object sender, EventArgs e)
