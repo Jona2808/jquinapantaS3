@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jquinapantaS2.Calificaciones">
+    <ContentPage.Content>
+        <ScrollView>
+            <!--habilitamos movilizar la pantalla hacia abajo-->
+            <StackLayout>
+                <!--Encabezado-->
+                <Label Text="Usuario" FontSize="15" HorizontalTextAlignment="Start"/>
+                <BoxView HorizontalOptions="FillAndExpand" HeightRequest="5" Color="#1690F4"/>
+                <Label Text="CALCULADORA DE NOTAS UISRAEL" HorizontalOptions="CenterAndExpand" FontSize="Title" HorizontalTextAlignment="Center" TextColor="Black" />
+                <BoxView HorizontalOptions="FillAndExpand" HeightRequest="5" Color="#1690F4"/>
+
+                <!--Parcial 1-->
+                <Label Text="Parcial I" FontSize="20" HorizontalTextAlignment="Start" TextColor="Black"/>
+                <BoxView HorizontalOptions="FillAndExpand" HeightRequest="5" Color="#1690F4"/>
+                <Label Text="Nota Seguimiento 1" FontSize="20" HorizontalTextAlignment="Start"/>
+                <Entry x:Name="txtNotaSeg1" Placeholder="Ingresa Nota 1" Keyboard="Numeric" MaxLength="4" TextChanged="txtNotaSeg1_TextChanged"/>
+                <Label Text="Nota Examen 1" FontSize="20" HorizontalTextAlignment="Start"/>
+                <Entry x:Name="txtExam1" Placeholder="Ingresa Nota Examen 1" Keyboard="Numeric" MaxLength="4" TextChanged="txtExam1_TextChanged"/>
+                <Label Text="Nota Parcial I" FontSize="20" HorizontalTextAlignment="Start" TextColor="Black"/>
+                <Entry x:Name="txtResu1" Placeholder="Resultado Parcial I" IsEnabled="False"/>
+                <BoxView HorizontalOptions="FillAndExpand" HeightRequest="5" Color="#1690F4"/>
+
+                <!--Parcial 2-->
+                <Label Text="Parcial II" FontSize="20" HorizontalTextAlignment="Start" TextColor="Black"/>
+                <BoxView HorizontalOptions="FillAndExpand" HeightRequest="5" Color="#1690F4"/>
+                <Label Text="Nota Seguimiento 2" FontSize="20" HorizontalTextAlignment="Start" />
+                <Entry x:Name="txtNotaSeg2" Placeholder="Ingresa Nota 2" Keyboard="Numeric" MaxLength="4" TextChanged="txtNotaSeg2_TextChanged"/>
+                <Label Text="Nota Examen 2" FontSize="20" HorizontalTextAlignment="Start"/>
+                <Entry x:Name="txtExam2" Placeholder="Ingresa Nota Examen 2" Keyboard="Numeric" MaxLength="4" TextChanged="txtExam2_TextChanged"/>
+                <Label Text="Nota Parcial II" FontSize="20" HorizontalTextAlignment="Start" TextColor="Black"/>
+                <Entry x:Name="txtResu2" Placeholder="Resultado Parcial II" IsEnabled="False"/>
+                <BoxView HorizontalOptions="FillAndExpand" HeightRequest="5" Color="#1690F4"/>
+
+                <!--Botones-->
+                <Button x:Name="btnCalcular" Text="Calcular" Clicked="btnCalcular_Clicked" />
+                <Button x:Name="btnLimpiar" Text="Nuevo Calculo" Clicked="btnLimpiar_Clicked" />
+                <BoxView HorizontalOptions="FillAndExpand" HeightRequest="5" Color="#1690F4"/>
+
+                <!--REsultado-->
+                <Label Text="Resultado" FontSize="20" HorizontalTextAlignment="Start" TextColor="Black"/>
+                <BoxView HorizontalOptions="FillAndExpand" HeightRequest="5" Color="#1690F4"/>
+                <Label x:Name="lblResultado" FontSize="20" HorizontalTextAlignment="Center" TextColor="Red"/>
+                <BoxView HorizontalOptions="FillAndExpand" HeightRequest="5" Color="#1690F4"/>
+
+            </StackLayout>
+         </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
